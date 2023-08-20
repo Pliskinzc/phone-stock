@@ -14,6 +14,9 @@
     "categories": {
       "api": {
         "phonestock": {}
+      },
+      "auth": {
+        "phonestockb2ac7843": {}
       }
     }
   }
