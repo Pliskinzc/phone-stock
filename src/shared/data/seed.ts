@@ -1,7 +1,7 @@
 import data from './phone'
 
 export async function seed(collectionName:string) {
-    await fetch(`https://restapi.fr/api/${collectionName}`, {
+    await fetch(`x/${collectionName}`, {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {

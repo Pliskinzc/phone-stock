@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-phonestock-dev-143655-authRole",
+      "UnauthRoleArn": "arn:aws:iam::345081147397:role/amplify-phonestock-dev-143655-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::345081147397:role/amplify-phonestock-dev-143655-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-phonestock-dev-143655-deployment",
+      "UnauthRoleName": "amplify-phonestock-dev-143655-unauthRole",
+      "StackName": "amplify-phonestock-dev-143655",
+      "StackId": "arn:aws:cloudformation:eu-north-1:345081147397:stack/amplify-phonestock-dev-143655/40cfc680-3f56-11ee-86d6-0a43aae3de52",
+      "AmplifyAppId": "d1xttzqo33sf4v"
+    }
+  }
+}
