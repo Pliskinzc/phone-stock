@@ -137,9 +137,9 @@ export const usePhoneListStore = defineStore('phoneList', {
 
 
     },
-    seed() {
-      seed('phoneslist')
-    },
+    // seed() {
+    //   seed('phoneslist')
+    // },
     setSearchQuery(query: string) {
       this.searchQuery = query.trim().replace(/\s+/g, ' ');
     }

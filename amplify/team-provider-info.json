@@ -10,6 +10,11 @@
       "StackName": "amplify-phonestock-dev-143655",
       "StackId": "arn:aws:cloudformation:eu-north-1:345081147397:stack/amplify-phonestock-dev-143655/40cfc680-3f56-11ee-86d6-0a43aae3de52",
       "AmplifyAppId": "d1xttzqo33sf4v"
+    },
+    "categories": {
+      "api": {
+        "phonestock": {}
+      }
     }
   }
 }
