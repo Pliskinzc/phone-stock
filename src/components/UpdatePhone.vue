@@ -47,8 +47,7 @@ const imei = ref(props.phone.imei || ''); // Fix here
 
  
 function updatePhone() {
-    phoneStore.updatePhone(props.phone._id as string,{
-        _id: props.phone._id,
+    phoneStore.updatePhone(props.phone.imei as string,{
         imei: imei.value,
         model: selectedModel.value as IPhoneModel,
         storage: selectedCapacity.value as StorageCapacity,

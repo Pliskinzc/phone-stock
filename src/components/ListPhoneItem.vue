@@ -9,14 +9,14 @@
         <div class="col col-4">IMEI</div>
         <div class="col col-5"></div>
       </li>
-      <li  v-for="phone in phones" :key="phone._id">
+      <li  v-for="phone in phones" :key="phone.imei">
         <div class="table-row">
           <div class="col col-1 mr-20" data-label="Modèle">{{ phone.model }}</div>
           <div class="col col-2 mr-20" data-label="Capacité">{{ phone.storage }}</div>
           <div class="col col-3 mr-20" data-label="Couleur">{{ phone.color }}</div>
           <div class="col col-4 mr-20" data-label="IMEI">{{ phone.imei }}</div>
           <div class="col col-5 mr-20 d-flex" data-label="Action">
-            <button class="btn btn-danger mr-20" @click="emit('deletePhone', phone._id)">Retirer</button>
+            <button class="btn btn-danger mr-20" @click="emit('deletePhone', phone.imei)">Retirer</button>
             <button class="btn btn-primary" @click="phone.editMode = true">Modifier</button>
           </div>
         </div>
@@ -38,7 +38,7 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits<{
-  (e: 'deletePhone', phoneId: string): void
+  (e: 'deletePhone', imei: string): void
 }>();
 
 
