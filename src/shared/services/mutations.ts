@@ -1,9 +1,6 @@
-export const createPhoneMutation = /* GraphQL */ `
-  mutation CreatePhone(
-    $input: CreatePhoneInput!
-    $condition: ModelPhoneConditionInput
-  ) {
-    createPhone(input: $input, condition: $condition) {
+export const createPhone = /* GraphQL */ `
+  mutation CreatePhone($input: CreatePhoneInput!) {
+    createPhone(input: $input) {
       id
       imei
       model
@@ -12,17 +9,13 @@ export const createPhoneMutation = /* GraphQL */ `
       editMode
       createdAt
       updatedAt
-      __typename
     }
   }
 `;
 
-export const updatePhoneMutation = /* GraphQL */ `
-  mutation UpdatePhone(
-    $input: UpdatePhoneInput!
-    $condition: ModelPhoneConditionInput
-  ) {
-    updatePhone(input: $input, condition: $condition) {
+export const updatePhone = /* GraphQL */ `
+  mutation UpdatePhone($input: UpdatePhoneInput!) {
+    updatePhone(input: $input) {
       id
       imei
       model
@@ -31,17 +24,13 @@ export const updatePhoneMutation = /* GraphQL */ `
       editMode
       createdAt
       updatedAt
-      __typename
     }
   }
 `;
 
 export const deletePhoneMutation = /* GraphQL */ `
-  mutation DeletePhone(
-    $input: DeletePhoneInput!
-    $condition: ModelPhoneConditionInput
-  ) {
-    deletePhone(input: $input, condition: $condition) {
+  mutation DeletePhone($input: DeletePhoneInput!) {
+    deletePhone(input: $input) {
       id
       imei
       model
@@ -50,7 +39,6 @@ export const deletePhoneMutation = /* GraphQL */ `
       editMode
       createdAt
       updatedAt
-      __typename
     }
   }
 `;

@@ -1,5 +1,5 @@
 import { API, graphqlOperation } from 'aws-amplify';
-import { createPhoneMutation, deletePhoneMutation, updatePhoneMutation } from './mutations';
+import { createPhone, deletePhoneMutation, updatePhone } from './mutations';
 import { getPhoneQuery, listPhonesQuery } from './queries';
 import type { PhoneInterface, PhoneFormInterface } from './../interfaces';
 
@@ -16,7 +16,7 @@ export async function fetchPhone(): Promise<PhoneInterface[]> {
 
 export async function addPhone(phone: PhoneFormInterface): Promise<PhoneFormInterface> {
   try {
-    const response = await API.graphql(graphqlOperation(createPhoneMutation, { input: phone }));
+    const response = await API.graphql(graphqlOperation(createPhone, { input: phone }));
     const newPhone: PhoneFormInterface = (response as any).data.createPhone;
     return newPhone;
   } catch (error) {
@@ -37,7 +37,7 @@ export async function deletePhone(phoneId: string): Promise<string> {
 
 export async function updatePhoneApi(phoneId: string, phone: Partial<PhoneFormInterface>): Promise<PhoneInterface> {
   try {
-    const response = await API.graphql(graphqlOperation(updatePhoneMutation, { input: { id: phoneId, ...phone } }));
+    const response = await API.graphql(graphqlOperation(updatePhone, { input: { id: phoneId, ...phone } }));
     const updatedPhone: PhoneInterface = (response as any).data.updatePhone;
     return updatedPhone;
   } catch (error) {

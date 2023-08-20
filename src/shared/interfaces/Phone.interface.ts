@@ -1,7 +1,6 @@
 import type { IPhoneModel, StorageCapacity, Color } from './types';
 
 export interface PhoneInterface {
-    _id: string,
     imei: string,
     model: IPhoneModel,
     storage: StorageCapacity,
@@ -10,7 +9,6 @@ export interface PhoneInterface {
 }
 
 export interface PhoneFormInterface {
-    _id?: string,
     imei: string,
     model: IPhoneModel,
     storage: StorageCapacity,
