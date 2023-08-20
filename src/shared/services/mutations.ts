@@ -1,46 +1,53 @@
-/* tslint:disable */
-/* eslint-disable */
-// this is an auto generated file. This will be overwritten
+export const createPhoneMutation = /* GraphQL */ `
+  mutation CreatePhone(
+    $input: CreatePhoneInput!
+    $condition: ModelPhoneConditionInput
+  ) {
+    createPhone(input: $input, condition: $condition) {
+      id
+      imei
+      model
+      storage
+      color
+      editMode
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const updatePhoneMutation = /* GraphQL */ `
+  mutation UpdatePhone(
+    $input: UpdatePhoneInput!
+    $condition: ModelPhoneConditionInput
   ) {
-    createTodo(input: $input, condition: $condition) {
+    updatePhone(input: $input, condition: $condition) {
       id
-      name
-      description
+      imei
+      model
+      storage
+      color
+      editMode
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
+
+export const deletePhoneMutation = /* GraphQL */ `
+  mutation DeletePhone(
+    $input: DeletePhoneInput!
+    $condition: ModelPhoneConditionInput
   ) {
-    updateTodo(input: $input, condition: $condition) {
+    deletePhone(input: $input, condition: $condition) {
       id
-      name
-      description
-      createdAt
-      updatedAt
-      __typename
-    }
-  }
-`;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
-  ) {
-    deleteTodo(input: $input, condition: $condition) {
-      id
-      name
-      description
+      imei
+      model
+      storage
+      color
+      editMode
       createdAt
       updatedAt
       __typename

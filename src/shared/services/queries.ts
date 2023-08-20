@@ -1,30 +1,33 @@
-/* tslint:disable */
-/* eslint-disable */
-// this is an auto generated file. This will be overwritten
-
-export const getTodo = /* GraphQL */ `
-  query GetTodo($id: ID!) {
-    getTodo(id: $id) {
+export const getPhoneQuery = /* GraphQL */ `
+  query GetPhone($id: ID!) {
+    getPhone(id: $id) {
       id
-      name
-      description
+      imei
+      model
+      storage
+      color
+      editMode
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const listTodos = /* GraphQL */ `
-  query ListTodos(
-    $filter: ModelTodoFilterInput
+
+export const listPhonesQuery = /* GraphQL */ `
+  query ListPhones(
+    $filter: ModelPhoneFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listPhones(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        name
-        description
+        imei
+        model
+        storage
+        color
+        editMode
         createdAt
         updatedAt
         __typename
