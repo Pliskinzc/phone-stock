@@ -11,8 +11,6 @@ export const getPhone = /* GraphQL */ `
       storage
       color
       editMode
-      createdAt
-      updatedAt
       __typename
     }
   }

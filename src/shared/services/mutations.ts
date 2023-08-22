@@ -38,7 +38,7 @@ export const updatePhone = /* GraphQL */ `
     }
   }
 `;
-export const deletePhone = /* GraphQL */ `
+export const deletePhoneMutation = /* GraphQL */ `
   mutation DeletePhone(
     $input: DeletePhoneInput!
     $condition: ModelPhoneConditionInput

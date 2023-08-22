@@ -1,11 +1,11 @@
 import { API, graphqlOperation } from 'aws-amplify';
 import { createPhone, deletePhoneMutation, updatePhone } from './mutations';
-import { getPhoneQuery, listPhonesQuery } from './queries';
+import { listPhones } from './queries';
 import type { PhoneInterface, PhoneFormInterface } from './../interfaces';
 
 export async function fetchPhone(): Promise<PhoneInterface[]> {
   try {
-    const response = await API.graphql(graphqlOperation(listPhonesQuery));
+    const response = await API.graphql(graphqlOperation(listPhones));
     const phones: PhoneInterface[] = (response as any).data.listPhones.items;
     return phones;
   } catch (error) {
