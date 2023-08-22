@@ -1,22 +1,32 @@
 {
-  "dev": {
+  "staging": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-phonestock-dev-143655-authRole",
-      "UnauthRoleArn": "arn:aws:iam::345081147397:role/amplify-phonestock-dev-143655-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::345081147397:role/amplify-phonestock-dev-143655-authRole",
+      "AuthRoleName": "amplify-amplify54573fa0af054-staging-213733-authRole",
+      "UnauthRoleArn": "arn:aws:iam::345081147397:role/amplify-amplify54573fa0af054-staging-213733-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::345081147397:role/amplify-amplify54573fa0af054-staging-213733-authRole",
       "Region": "eu-north-1",
-      "DeploymentBucketName": "amplify-phonestock-dev-143655-deployment",
-      "UnauthRoleName": "amplify-phonestock-dev-143655-unauthRole",
-      "StackName": "amplify-phonestock-dev-143655",
-      "StackId": "arn:aws:cloudformation:eu-north-1:345081147397:stack/amplify-phonestock-dev-143655/40cfc680-3f56-11ee-86d6-0a43aae3de52",
-      "AmplifyAppId": "d1xttzqo33sf4v"
+      "DeploymentBucketName": "amplify-amplify54573fa0af054-staging-213733-deployment",
+      "UnauthRoleName": "amplify-amplify54573fa0af054-staging-213733-unauthRole",
+      "StackName": "amplify-amplify54573fa0af054-staging-213733",
+      "StackId": "arn:aws:cloudformation:eu-north-1:345081147397:stack/amplify-amplify54573fa0af054-staging-213733/c6424360-3fa1-11ee-b968-06c838df6bde",
+      "AmplifyAppId": "d1oz0l2qxfobmr"
+    }
+  },
+  "phonestock": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-phonestock-phonestock-232104-authRole",
+      "UnauthRoleArn": "arn:aws:iam::345081147397:role/amplify-phonestock-phonestock-232104-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::345081147397:role/amplify-phonestock-phonestock-232104-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-phonestock-phonestock-232104-deployment",
+      "UnauthRoleName": "amplify-phonestock-phonestock-232104-unauthRole",
+      "StackName": "amplify-phonestock-phonestock-232104",
+      "StackId": "arn:aws:cloudformation:eu-north-1:345081147397:stack/amplify-phonestock-phonestock-232104/ce28d710-4131-11ee-8b27-0ab9a3bf7214",
+      "AmplifyAppId": "d1oz0l2qxfobmr"
     },
     "categories": {
       "api": {
         "phonestock": {}
-      },
-      "auth": {
-        "phonestockb2ac7843": {}
       }
     }
   }

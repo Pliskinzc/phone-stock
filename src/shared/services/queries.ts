@@ -1,4 +1,8 @@
-export const getPhoneQuery = /* GraphQL */ `
+/* tslint:disable */
+/* eslint-disable */
+// this is an auto generated file. This will be overwritten
+
+export const getPhone = /* GraphQL */ `
   query GetPhone($id: ID!) {
     getPhone(id: $id) {
       id
@@ -13,8 +17,7 @@ export const getPhoneQuery = /* GraphQL */ `
     }
   }
 `;
-
-export const listPhonesQuery = /* GraphQL */ `
+export const listPhones = /* GraphQL */ `
   query ListPhones(
     $filter: ModelPhoneFilterInput
     $limit: Int
