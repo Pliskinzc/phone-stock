@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import TheHeader from './components/TheHeader.vue';
 import { API } from "aws-amplify";
 import { createPhone } from '@/shared/services/mutations';
+import { listPhones } from '@/shared/services/queries';
 
 async function addPhone() {
   const newPhone = await API.graphql({
@@ -15,15 +16,27 @@ async function addPhone() {
 		"color": "Noir",
 		"editMode": false
 	}
-    }
+}
 });
+console.log('ok')
 }
 
-await addPhone()
+// List all items
+async function seePhones() {
+  const allPhones = await API.graphql({
+      query: listPhones
+  });
+  console.log(listPhones.length);
+}
 
+addPhone()
+seePhones()
 </script>
 
 <template>
+  <amplify-authentificator>
+    
+  </amplify-authentificator>
   <div class="app-container">
     <TheHeader class="header"/>
     <div class="app-content">
